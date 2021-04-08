@@ -3,9 +3,12 @@ name = "hexlet-code"
 version = "0.1.0"
 description = ""
 authors = ["MAX L <Maximum00214@yandex.ru>"]
+packages = [
+  { include = "brain_games" },
+]
 
 [tool.poetry.dependencies]
-python = ""
+python = "^3.8.8"
 
 [tool.poetry.dev-dependencies]
 
@@ -16,6 +19,3 @@ build-backend = "poetry.core.masonry.api"
 [tool.poetry.scripts]
 brain-games = "brain_games.scripts.brain_games:main"
 
-packages = [
-  { include = "brain_games" },
-]
